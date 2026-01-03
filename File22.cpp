@@ -11,5 +11,5 @@ int main()
      sum += num;
      i++;
     }
-   cout << "Sum of All number = "<<sum;
+   cout << "Sum of all numbera = "<<sum;
 }

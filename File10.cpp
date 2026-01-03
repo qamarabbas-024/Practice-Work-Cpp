@@ -1,31 +1,13 @@
-/*Input two numbers and an operator (+, -, *, /) and print the result.*/
+/*Write a program that takes the base and height of a triangle and
+ calculates the area using formula:
+Area = 0.5 × base × height*/
 #include<iostream>
 using namespace std;
 int main()
 {
-    int num1 ,num2;
-    char op ;
-    cout << "Enter first number: ";
-    cin >> num1;
-    cout << "Enter second number: ";
-    cin >> num2;
-    cout << "Enter the operator: ";
-    cin >> op ;
-    if( op == '+')
-{
-    cout <<num1 <<" + " <<num2 <<" = "<< num1+num2;
-}
- else if( op == '-')
-{
-    cout <<num1 <<" - " <<num2 <<" = "<< num1-num2;
-}
- else if( op == '*')
-{
-    cout <<num1 <<" * " <<num2 <<" = "<< num1*num2;
-}
- else if( op == '/')
-{
-    cout <<num1 <<" / " <<num2 <<" = "<< num1/num2;
-} 
-
+    float base ,height,area ;
+    cout << "Enter Value of Base and Height: ";
+    cin >>base >> height;
+    area = 0.5*base*height;
+    cout << "Area = " << area;
 }

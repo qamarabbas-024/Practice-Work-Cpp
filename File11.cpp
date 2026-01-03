@@ -1,36 +1,13 @@
-/*Input a number (1–7) and print the corresponding day using switch.*/
+
 #include<iostream>
 using namespace std;
 int main()
 {
-    int n;
-    cout << "Enter a number between 1-7: ";
-    cin >> n;
-    switch(n)
-    {
-     case 1:
-     cout << "Monday";
-     break;
-     case 2:
-     cout << "Tuesday";
-     break;
-     case 3:
-     cout << "Wednesday";
-     break;
-     case 4:
-     cout << "Thursday";
-     break;
-     case 5:
-     cout << "Friday";
-     break;
-     case 6:
-     cout << "Saturday";
-     break;
-     case 7:
-     cout << "Sunday";
-     break;
-     default:
-     cout << "Number is not between 1-7";
-    }
-    return 0;
+  int n ;
+  cout << "Enter value of N: ";
+  cin >> n;
+  for(int i=1;i<=10;i++)
+  {
+    cout << n <<" x " << i << " = " << n*i <<endl;
+  }
 }

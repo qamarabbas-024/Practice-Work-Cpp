@@ -1,40 +1,36 @@
-/*Display a menu with 4 options (Add, Subtract, Multiply, Divide). Input 
-choice and two numbers, perform the operation using switch.*/
-#include<iostream>
+#include <iostream>
 using namespace std;
-int main()
-{
-    int choice;
-    float num1 ,num2;
-    cout << " === Menu === "<< endl;
-    cout << "1. Add " << endl;
-    cout << "2. Substract " << endl;
-    cout << "3. Multiply "<< endl;
-    cout << "4. Divide " << endl;
-    cout << "Enter your chocie: ";
-    cin >> choice ;
-    cout << "Enter first number: ";
-    cin >> num1;
-    cout << "Enter second number: ";
-    cin >> num2;
-    switch(choice)
-    {
-        case 1:
-        cout << num1 << " + " << num2 << " = " << num1 + num2 ;
-        break;
-        case 2:
-        cout << num1 << " - " << num2 << " = " << num1 - num2 ;
-        break;
-        case 3:
-        cout << num1 << " * " << num2 << " = " << num1 * num2 ;
-        break;
-        case 4:
-        if(num2 != 0)
-       cout << num1 << " / " << num2 << " = " << num1 / num2 ;
-      else
-      cout << "it is not possible to divide with 0"; 
-      break;
-       default:
-       cout << "Invalid choice";
+
+int main() {
+    int n, key;
+    
+    cout << "Enter the number of elements in the array: ";
+    cin >> n;
+
+    int arr[n];
+    cout << "Enter " << n << " elements: ";
+    for (int i = 0; i < n; i++) {
+        cin >> arr[i];
     }
+
+    cout << "Enter the element to search: ";
+    cin >> key;
+
+    bool found = false;
+    int position = -1;
+
+    for (int i = 0; i < n; i++) {
+        if (arr[i] == key) {
+            found = true;
+            position = i;
+            break; // stop after finding the first occurrence
+        }
+    }
+
+    if (found)
+        cout << key << " found at position " << position << endl;
+    else
+        cout << key << " not found in the array." << endl;
+
+    return 0;
 }

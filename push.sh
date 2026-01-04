@@ -1,4 +1,4 @@
 git pull 
 git add .
-git commit -m "Qamar Abbas work"
+git commit -m "Practice"
 git push origin main
